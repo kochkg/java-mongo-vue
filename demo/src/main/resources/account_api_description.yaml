@@ -68,11 +68,9 @@ components:
     Account:
       type: object
       properties:
-        id:
-          type: string
-          x-field-extra-annotation: "@com.fasterxml.jackson.annotation.JsonIgnore"
         accountNumber:
           type: string
+          x-field-extra-annotation: "@org.springframework.data.annotation.Id"
         balance:
           type: number
     AccountNotFoundError:
